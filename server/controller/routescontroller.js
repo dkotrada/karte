@@ -1,8 +1,8 @@
 module.exports = {
-    loginget: function (req, res, next) {
+    loginget: (req, res, next) => {
         res.render('pages/login');
     },
-    loginpost: function (req, res, next) {
+    loginpost: (req, res, next) => {
         if (req.body.username && req.body.username === 'admin@karte.de' && req.body.password && req.body.password === 'pass') {
             req.session.authenticated = true;
             res.redirect('/admin');
@@ -11,22 +11,20 @@ module.exports = {
             res.render('pages/abortion');
         }
     },
-    logout: function (req, res, next) {
+    logout: (req, res, next) => {
         delete req.session.authenticated;
         res.redirect('/');
     },
-    getroot: function (req, res) {
+    getroot: (req, res) => {
         res.render('pages/index');
     },
-    catchAll: function (req, res) {
+    catchAll: (req, res) => {
         res.render('pages/errorpage');
     },
-    admin: function (req, res) {
+    admin: (req, res) => {
         res.render('pages/admin');
     },
-    customer: function (req, res) {
+    customer: (req, res) => {
         res.render('pages/customer');
-    },
-
-
+    }
 };
