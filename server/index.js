@@ -1,11 +1,11 @@
-const express = require('express');
-const cookieParser = require('cookie-parser');
-const cookieSession = require('cookie-session');
-const path = require('path');
-const bodyParser = require('body-parser');
-const initDb = require('./initdb');
-const personController = require('./controller/personcontroller');
-const routesController = require('./controller/routescontroller');
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import cookieSession from 'cookie-session';
+import path from 'path';
+import bodyParser from 'body-parser';
+import initDb from './initdb';
+import personController from './controller/personcontroller';
+import routesController from './controller/routescontroller';
 
 const app = express();
 
