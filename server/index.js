@@ -60,6 +60,6 @@ app.get('/logout', routesController.logout);
 app.get('/', routesController.getroot);
 app.get('*', routesController.catchAll);
 
-app.listen(3113, function () {
+app.listen(3113, () => {
     console.log('URL des Servers: http://localhost:3113');
 });
