@@ -3,7 +3,7 @@
 Nach dem Herunterladen von GIT
 
 1. in der konsole: `yarn`
-2. in einer Konsole folgendes starten: `mongod --dbpath mongodb`
+2. in einer anderen Konsole: `mongod --dbpath mongodb`
 3. in der konsole: `yarn start`
 
 
