@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
 
 mongoose.Promise = global.Promise;
-
-const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://127.0.0.1/karte_db';
 const sh = require('shelljs');
 
