@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import cookieSession from 'cookie-session';
 import path from 'path';
 import bodyParser from 'body-parser';
-import initDb from './initdb';
+import initDb from './controller/dbcontroller';
 import personController from './controller/personcontroller';
 import routesController from './controller/routescontroller';
 
@@ -50,7 +50,7 @@ app.get('/persons/:id/card/pin', personController.generatepin);
 app.post('/persons/:id/card/pin', personController.generatepin);
 
 // DB Befüllen
-app.get('/populatedb', initDb.populationcheck);
+app.get('/populatedb', initDb.populate);
 
 app.post('/login', routesController.loginpost);
 app.get('/login', routesController.loginget);
