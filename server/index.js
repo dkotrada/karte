@@ -50,7 +50,7 @@ app.get('/persons/:id/card/pin', personController.generatepin);
 app.post('/persons/:id/card/pin', personController.generatepin);
 
 // DB Befüllen
-app.get('/populatedb', initDb.populate);
+app.get('/populatedb', dbcontroller.populate);
 
 app.post('/login', routesController.loginpost);
 app.get('/login', routesController.loginget);
