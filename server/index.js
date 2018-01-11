@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import cookieSession from 'cookie-session';
 import path from 'path';
 import bodyParser from 'body-parser';
-import initDb from './controller/dbcontroller';
+import dbcontroller from './controller/dbcontroller';
 import personController from './controller/personcontroller';
 import routesController from './controller/routescontroller';
 
@@ -25,7 +25,7 @@ function checkAuth(req, res, next) {
 }
 
 // Datenbank initialisieren
-initDb.initdb();
+dbcontroller.initdb();
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve("./server/views"));
