@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Dr",
+    "name": "Alkins",
+    "vorname": "Ethyl",
+    "strasse": "Cambridge",
+    "hausnummer": "1068",
+    "stadt": "Komiža",
+    "postleitzahl": "214765",
+    "telefon": "5174645576",
+    "email": "ealkins0@ocn.ne.jp",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  },
+  {
+    "title": "Dr",
+    "name": "Acosta",
+    "vorname": "Ladonna",
+    "strasse": "Kropf",
+    "hausnummer": "30",
+    "stadt": "Niedzica",
+    "postleitzahl": "441",
+    "telefon": "7781762233",
+    "email": "lacosta5@netscape.com",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  },
+  {
+    "title": "Mrs",
+    "name": "Wale",
+    "vorname": "Catriona",
+    "strasse": "Drewry",
+    "hausnummer": "383",
+    "stadt": "Jarošov nad Nežárkou",
+    "postleitzahl": "37841",
+    "telefon": "5572136578",
+    "email": "cwale6@nifty.com",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  },
+  {
+    "title": "Dr.",
+    "name": "Jung",
+    "vorname": "Julia",
+    "strasse": "Verwalter",
+    "hausnummer": "33",
+    "stadt": "Superstadt",
+    "postleitzahl": "37877",
+    "telefon": "5572136578",
+    "email": "julia@karte.de",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  },
+  {
+    "title": "Ms",
+    "name": "Groucutt",
+    "vorname": "Chrystel",
+    "strasse": "Vermont",
+    "hausnummer": "95",
+    "stadt": "Xibing",
+    "postleitzahl": "25585",
+    "telefon": "1619372553",
+    "email": "cgroucutt7@flavors.me",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  }
+]

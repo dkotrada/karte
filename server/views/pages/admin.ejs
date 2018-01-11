@@ -1,0 +1,35 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <% include ../partials/head %>
+    <script>
+        function deleteAll() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("response").innerHTML = 'Löschvorgang erfolgreich';
+                }
+            };
+            xhttp.open("DELETE", "http://localhost:3113/persons", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body class="container">
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+    <h3 class="alert alert-info">Admin Bereich</h3>
+    <h3 id="response" class="alert alert-success"></h3>
+    <div class="btn-group">
+        <button class="btn btn-danger" type="button" onclick="deleteAll()">Alle aus Datenbank löschen</button>
+        <a href="/populatedb" class="btn btn-warning">Datenbankdaten Neu</a>
+    </div>
+</main>
+<footer>
+    <% include ../partials/footer %>
+</footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+#Ignoriere alles
+*
+#Ignoriere auch Unterverzeichnisse
+*/
+#Aber ignoriere nicht .gitignore Datei
+!.gitignore

@@ -1,0 +1,40 @@
+<!-- views/pages/personen.ejs -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+    <div class="row">
+
+        <div class="col">
+            <div class="card" style="width: 20rem; margin-bottom: 1rem">
+                <h4 class="card-header"><%= person.title %> <%= person.vorname %> <%= person.name %></h4>
+                <div class="card-body">
+                    <p class="card-text">
+                        Adresse <br/>
+                        <%= person.strasse %> <%= person.hausnummer %> <br/>
+                        <%= person.postleitzahl %> <%= person.stadt %> <br/>
+                        Email: <%= person.email %> <br/>
+                        PIN: <%= person.card.pin %> <br/>
+                        PID: <%= person._id %> <br/>
+                        KARTEN Nr: <%= person.card.uuid %> <br/>
+                    </p>
+                    <div class="btn-group">
+                        <a href="<%= `/person/${person._id}` %>" type="button" class="btn btn-danger">Profil löschen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer>
+    <% include ../partials/footer %>
+</footer>
+</body>
+</html>
