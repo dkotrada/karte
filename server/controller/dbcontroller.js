@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 mongoose.Promise = global.Promise;
 const url = 'mongodb://127.0.0.1/karte_db';
-const sh = require('shelljs');
+const shell = require('shelljs');
 
 module.exports = {
     initdb: (req, res) => {
@@ -13,6 +13,6 @@ module.exports = {
     populate: () => {
         // Populate database
         const command = 'mongoimport --db karte_db --collection people --drop --file DATABASE_SEED.json --jsonArray';
-        sh.exec(command, {silent: true});
+        shell.exec(command, {silent: true});
     }
 };
