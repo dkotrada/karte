@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
+import shell from 'shelljs';
 
 mongoose.Promise = global.Promise;
 const url = 'mongodb://127.0.0.1/karte_db';
-const shell = require('shelljs');
+
 
 module.exports = {
     initdb: () => {
