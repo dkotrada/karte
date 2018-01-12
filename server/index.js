@@ -9,6 +9,7 @@ import routesController from './controller/routescontroller';
 
 const app = express();
 
+// http://expressjs.com/en/guide/using-middleware.html
 function checkAuth(req, res, next) {
     console.log('checkAuth ' + req.url);
 
