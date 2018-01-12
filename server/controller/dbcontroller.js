@@ -5,7 +5,7 @@ const url = 'mongodb://127.0.0.1/karte_db';
 const shell = require('shelljs');
 
 module.exports = {
-    initdb: (req, res) => {
+    initdb: () => {
         mongoose.connect(url, {useMongoClient: true});
         const connection = mongoose.connection;
         connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
