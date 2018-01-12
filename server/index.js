@@ -11,7 +11,6 @@ const app = express();
 
 // http://expressjs.com/en/guide/using-middleware.html
 function checkAuth(req, res, next) {
-    console.log('checkAuth ' + req.url);
 
     // für nicht admin nicht ausliefern
     if (req.url === '/admin' && (!req.session || !req.session.authenticated)) {
