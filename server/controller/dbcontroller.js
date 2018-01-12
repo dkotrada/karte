@@ -2,6 +2,8 @@ import mongoose from 'mongoose';
 import shell from 'shelljs';
 
 mongoose.Promise = global.Promise;
+
+// Konfiguration Mongo
 const url = 'mongodb://127.0.0.1/karte_db';
 
 
