@@ -1,4 +1,4 @@
-const PersonModel = require('../model/person');
+import PersonModel from '../model/person';
 
 module.exports = {
     create: (req, res) => {
