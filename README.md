@@ -1,23 +1,27 @@
-#  Für windows
+# Getting Startet mit Projekt `karte`
 
-Nach dem Herunterladen von GIT
+## Benötigte Software (Windows und Ubuntu)
 
-1. in der konsole: `yarn`
-2. in einer anderen Konsole: `mongod --dbpath mongodb`
-3. in der konsole: `yarn start`
+- YARN: https://yarnpkg.com/lang/en/
+- NodeJS: https://nodejs.org/en/
+- MongoDB: https://www.mongodb.com/download-center#community
+
+## Projekt Quellcode herunterladen
+
+- https://github.com/dkotrada/karte/archive/master.zip
+- Nach dem entpacken: `cd karte-master`
+
+##  Projekt initialisieren und Starten
+
+1. in der konsole: `yarn` (Initialisieren)
+2. in einer anderen Konsole: `mongod --dbpath mongodb` (Datenbankspeicherort angeben)
+3. in der konsole: `yarn start` (Applikation starten)
+4. Browser öffnen: `http://localhost:3131`
 
 
-# NodeJS Application mit Express, Bootstrap, MongoDB und Mongoose
+# Allgemeine Informationen zu benutzten Technologien
 
-- node 6 mit nvm installiert
-- webpack?
-- babel-node
-
-## Anlegen von Gitignore Datei
-
-Beim Arbeiten mit dem Git Versionsverwaltungssystem ist es empfehlenswert nicht alle Dateien von dem Projekt mit dem Git zu versionieren. Daher legen wir die `.gitignore` Datei in unserem Projektordner an.
-~~~
-~~~
+NodeJS Application mit Express, Bootstrap, MongoDB und Mongoose
 
 
 ## Node.js
@@ -28,16 +32,6 @@ https://nodejs.org/de/
 ## Express.js
 Express ist ein schnelles, offenes, unkompliziertes Web-Framework für Node.js.
 http://expressjs.com/de/
-
-### Erstellung einer Express Application
-
-Vorausgesetzt Node.js ist schon installiert. Im Projektordner folgende Kommandos ausführen:
-- `touch kundenkarte.js` eine JavaScript Datei anlegen. Fungiert als Einstiegspunkt der Anwendung.
-- `$ yarn init` und die Fragen beantworten.
-- `$ yarn add express`
-- Die Datei `kundenkarte.js` mit dem Inhalt befüllen. http://expressjs.com/de/starter/hello-world.html
-- Express-App starten: `$ node kundenkarte.js`
-- Express-App ansezen: Im Browser `localhost:3000` laden.
 
 
 ## MongoDB
@@ -58,77 +52,6 @@ Um MongoDB zu installieren einfach den Anleitungen auf den folgenden Webseiten f
 - https://docs.mongodb.com/manual/administration/install-community/
 - https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
-#### Starten vom Server
-- sudo service mongod start
-- mongo --shell
-
-
-## Mongoose
-Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js
-
-http://mongoosejs.com/
-
-### Mongoose Installation und Benutzung
-
-- Im Projektordner das Kommando `$ npm install mongoose --save` ausführen.
-- Danach ist das Modul in der `package.json` Datei eingetragen. Z.B. `"mongoose": "^4.12.4"`
-- Die Datei `kundenkarte.js` mit folgendem Inhalt erweitern:
-
-~~~js
-// Einbinden des Moduls
-var mongoose = require('mongoose');
-// Verbindung zur Datenbank aufbauen
-mongoose.connect('mongodb://de-kundenkarte-user:<PASSWORD>@ds125365.mlab.com:25365/de-kundenkarte-db', { useMongoClient: true });
-// Anstatt von Callbacks die asynchronen Operationen mit Promise benutzen
-mongoose.Promise = global.Promise;
-
-// Mongoose Model definieren: Cat Objekt mit dem Attribut Name
-var Person = mongoose.model('Person', { name: String });
-
-// Objekte aus dem Datenbank auflisten
-Person.find(function(err, cats) {
-  if (err) return console.error(err);
-  console.log(cats);
-})
-~~~
-
-## Ausliefern einer statischen HTML Webseite
-
-Der Pfad, den Sie für die Funktion express.static angeben, ist jedoch relativ zum Verzeichnis, aus dem Sie Ihren Prozess node starten. Wenn Sie die Express-Anwendung aus einem anderen Verzeichnis ausführen, ist es sicherer, den absoluten Pfad des Verzeichnisses zu verwenden, das Sie bereitstellen wollen:
-
-
-~~~js
-app.use('/static', express.static(__dirname + '/public'));
-~~~
-
-### Aufbau der statischen index.html Seite
-
-#### Design mit Bootstrap Framework
-Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
-
-Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
-
-http://getbootstrap.com/
-
-
-## Übername der Daten von der Webseite
-
-### POST Daten auslesen
-
-- `yarn add body-parser`
-
-
-## Mongo Server Starten Stoppen
-
-`sudo service mongod start`
-
-`sudo service mongod stop`
-~~~package.json
-    "prestart": "sudo service mongod start",
-    "start": "node ./fuse.js",
-    "poststop": "sudo service mongod stop"
-~~~
-
 ### Mongo Consolen Bedienung
 - https://docs.mongodb.com/manual/reference/mongo-shell/
 - Starte shell `mongo --shell`
@@ -138,16 +61,30 @@ http://getbootstrap.com/
 - Inhalt aller Daten in der Kollektion anzeigen `db.collectioname.find()`
 - Gesamten Inhalt aus der Kollektion entfernen `db.collectionname.remove({})` https://docs.mongodb.com/getting-started/shell/remove/
 
-## MongoDB befüllen des Datenbanks mit Beispieldaten
+### MongoDB befüllen des Datenbanks mit Beispieldaten
 - in dem Datenbank `karte_db`
 - collection `people`
 - https://docs.mongodb.com/getting-started/shell/import-data/
 - `mongoimport --db karte_db --collection people --drop --file DATABASE_SEED.json --jsonArray`
 
-## Bei Neustart von Computer soll mongod Service gestartet werden
-`sudo service mongod start` oder stop
-
-## Verzeichnis für MongoDB angeben
+### Verzeichnis für MongoDB angeben
 - Neues commando vor dem Start `mongod --dbpath mongodb/` im extra terminal
 
+
+## Mongoose
+Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js
+
+http://mongoosejs.com/
+
+## Design mit Bootstrap Framework
+Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+
+http://getbootstrap.com/
+
+
+# Dokumentation Quellcode des Projekts
+
+Die Dokumentation ist in den Kommentaren im Quellcode nachzulesen.
 
