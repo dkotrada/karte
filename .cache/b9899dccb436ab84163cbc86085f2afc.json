@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"mongodb","loc":{"line":6,"column":21}}],"generated":{"js":"\n/*!\n * Module dependencies.\n */\n\nvar Binary = require('mongodb').Binary;\n\nmodule.exports = exports = Binary;\n"},"hash":"d0608d71b3d5ce9fdb0ed7ef97c9a6d5"}

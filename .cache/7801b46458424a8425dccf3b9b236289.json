@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./decode","loc":{"line":3,"column":41}},{"name":"./encode","loc":{"line":4,"column":45}}],"generated":{"js":"\"use strict\";exports.decode=exports.parse=require(\"./decode\"),exports.encode=exports.stringify=require(\"./encode\");"},"hash":"112b36f075f7cf7fca6dbf8a40f607e2"}

@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"'use strict';\n\n/*!\n * ignore\n */\n\nmodule.exports = function(val) {\n  if (typeof val !== 'number' && typeof val !== 'string') {\n    throw new Error('$type parameter must be number or string');\n  }\n\n  return val;\n};\n"},"hash":"40973640f0d9bdb7d340eb6963ad8cec"}

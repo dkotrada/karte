@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./stringify","loc":{"line":3,"column":24}},{"name":"./parse","loc":{"line":4,"column":20}},{"name":"./formats","loc":{"line":5,"column":22}}],"generated":{"js":"\"use strict\";var r=require(\"./stringify\"),e=require(\"./parse\"),s=require(\"./formats\");module.exports={formats:s,parse:e,stringify:r};"},"hash":"077add4ca22ed77dcc10a554d4ea9c12"}

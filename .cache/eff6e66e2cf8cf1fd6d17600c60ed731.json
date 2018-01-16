@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"process"}],"generated":{"js":"var process = require(\"process\");\nvar e,r=require(\"process\");if(r.browser)e=\"utf-8\";else{var s=parseInt(r.version.split(\".\")[0].slice(1),10);e=s>=6?\"utf-8\":\"binary\"}module.exports=e;"},"hash":"847980c3a04e184c7cbd65ad83c2c794"}

@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"function o(){throw new Error(\"Can't use ES6 promise with mpromise style constructor\")}o.use=function(r){o.ES6=r},module.exports=o;"},"hash":"e3f3bc539e3c9281a923c957c00505f8"}

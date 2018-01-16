@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./db.json","loc":{"line":11,"column":25}}],"generated":{"js":"module.exports=require(\"./db.json\");"},"hash":"619c85cc5349507a4d4483e79679aeec"}

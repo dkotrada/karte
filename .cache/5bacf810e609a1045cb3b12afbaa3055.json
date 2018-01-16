@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"../drivers","loc":{"line":11,"column":25}}],"generated":{"js":"module.exports=require(\"../drivers\").Decimal128;"},"hash":"c7d84c56e73e269e2627bfbe6fbc2f82"}

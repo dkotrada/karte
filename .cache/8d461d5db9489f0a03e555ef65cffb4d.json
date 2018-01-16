@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./common","loc":{"line":1,"column":21}}],"generated":{"js":"var r=require(\"./common\");function e(){return r.state.error}module.exports=e;"},"hash":"f63cda1e65a4197e42cb3a15ee06bbe1"}

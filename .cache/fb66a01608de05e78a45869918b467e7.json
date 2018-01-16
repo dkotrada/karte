@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"mongodb","loc":{"line":5,"column":25}}],"generated":{"js":"/*!\n * ignore\n */\n\nmodule.exports = require('mongodb').Decimal128;\n"},"hash":"c09221cca4197c14dd3bb9a03d66ff97"}

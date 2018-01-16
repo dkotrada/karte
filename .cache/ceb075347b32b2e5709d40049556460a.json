@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./","loc":{"line":7,"column":28}}],"generated":{"js":"\"use strict\";var t=require(\"./\");function o(o){t.call(this,'No matching document found for id \"'+o._id+'\"'),this.name=\"VersionError\"}o.prototype=Object.create(t.prototype),o.prototype.constructor=t,module.exports=o;"},"hash":"f7c24a6361494574acdd2d447d7e2c00"}
