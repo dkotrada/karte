@@ -20,7 +20,7 @@ Verwaltungsseiten sind über die Menüpunkte `Login`, `Abmelden`, `Adminin` und 
 Herr Feldherr kann alle Kunden anschauen, PIN für die Person neu generieren, einzelne Personen löschen,
 das gesamte Datenbestand löschen und die Datenbank mit Kunden aus einer Datei neu befüllen.
 
-# Getting Startet mit Projekt `karte`
+# Erste Schritte mit dem Projekt `karte`
 
 ## Benötigte Software (Windows und Ubuntu)
 
@@ -76,21 +76,21 @@ Um MongoDB zu installieren einfach den Anleitungen auf den folgenden Webseiten f
 
 ### Mongo Consolen Bedienung
 - https://docs.mongodb.com/manual/reference/mongo-shell/
-- Starte shell `mongo --shell`
-- Zeige Datenbanken `show dbs`
-- Auswählen des Datenbankes `use databasename`
-- Kollectionen anzeigen `show collections` oder `show tables`
-- Inhalt aller Daten in der Kollektion anzeigen `db.collectioname.find()`
-- Gesamten Inhalt aus der Kollektion entfernen `db.collectionname.remove({})` https://docs.mongodb.com/getting-started/shell/remove/
+- Shell starten: `mongo --shell`
+- Zeige Datenbanken: `show dbs`
+- Auswählen des Datenbankes: `use databasename`
+- Kollektionen anzeigen: `show collections` oder `show tables`
+- Inhalt aller Daten in der Kollektion anzeigen: `db.collectioname.find()`
+- Gesamten Inhalt aus der Kollektion entfernen: `db.collectionname.remove({})` https://docs.mongodb.com/getting-started/shell/remove/
 
 ### MongoDB befüllen des Datenbanks mit Beispieldaten
-- in dem Datenbank `karte_db`
-- collection `people`
+- Dokument: `karte_db`
+- Kollektion: `people`
 - https://docs.mongodb.com/getting-started/shell/import-data/
 - `mongoimport --db karte_db --collection people --drop --file DATABASE_SEED.json --jsonArray`
 
 ### Verzeichnis für MongoDB angeben
-- Neues commando vor dem Start `mongod --dbpath mongodb/` im extra terminal
+- Neues kommando vor dem Start `mongod --dbpath mongodb/` im extra terminal
 
 
 ## Mongoose
@@ -99,9 +99,7 @@ Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js
 http://mongoosejs.com/
 
 ## Design mit Bootstrap Framework
-Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
-
-Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+Bootstrap ist ein Open-Source-Toolkit zur Entwicklung responsiver Designs mit HTML, CSS und JS.
 
 http://getbootstrap.com/
 
