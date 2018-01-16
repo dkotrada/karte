@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./document.js","loc":{"line":8,"column":23}},{"name":"./browserDocument.js","loc":{"line":9,"column":30}}],"generated":{"js":"\"use strict\";var e=require(\"./document.js\"),r=require(\"./browserDocument.js\"),o=!1;module.exports=function(){return o?r:e},module.exports.setBrowser=function(e){o=e};"},"hash":"af48ff7846e087fd04c156b281b1aedb"}

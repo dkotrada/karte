@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"bson","loc":{"line":6,"column":21}}],"generated":{"js":"\n/*!\n * Module dependencies.\n */\n\nvar Binary = require('bson').Binary;\n\n/*!\n * Module exports.\n */\n\nmodule.exports = exports = Binary;\n"},"hash":"79dca933710fd30373021b9f81e05775"}

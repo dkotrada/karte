@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"bson","loc":{"line":5,"column":25}}],"generated":{"js":"/*!\n * ignore\n */\n\nmodule.exports = require('bson').Decimal128;\n"},"hash":"2f94ce59d923195f5aeb350590f03057"}

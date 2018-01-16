@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../drivers","loc":{"line":11,"column":23}}],"generated":{"js":"var e=require(\"../drivers\").ObjectId;module.exports=e;"},"hash":"a9394c4ff0100d51ede65fe7a868c5bb"}

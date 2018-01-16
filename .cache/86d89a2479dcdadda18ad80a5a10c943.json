@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../drivers","loc":{"line":11,"column":25}}],"generated":{"js":"/**\n * ObjectId type constructor\n *\n * ####Example\n *\n *     var id = new mongoose.Types.ObjectId;\n *\n * @constructor ObjectId\n */\n\nmodule.exports = require('../drivers').Decimal128;\n"},"hash":"5e18f057ce2306cd147896600030f41c"}

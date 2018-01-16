@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"'use strict';\n\n/*!\n * ignore\n */\n\nmodule.exports = function(val) {\n  if (typeof val !== 'boolean') {\n    throw new Error('$exists parameter must be a boolean!');\n  }\n\n  return val;\n};\n"},"hash":"56534d10381fc4a7b3f169f82c3cf9c7"}
