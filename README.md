@@ -12,8 +12,13 @@ eine Kundenkarte zu beantragen, die Kartenpin zu ändern und die gespeicherten K
 Herr Feldherr möchte die vorhandenen Kundendaten in das System übernehmen können. 
 Herr Feldherr benötig für die Verwaltung der Karten einen geschützten Bereich.
 
-### Realisierung
-Das Projekt 
+### Implementierung
+Das System ist als eine Webseite mit dem Datenbanksystem realisiert. Die Weboberfläche ist responsive. 
+Daher ist die Benutzerfreundlich für mobile Geräte. Die Bedienung der Funktionen geschieht über das obere Menü.
+Die erste Seite ist ein Webformular. Es gibt eine Seite für den Kunden, erreichbar über das Menü `Kunde`. 
+Verwaltungsseiten sind über die Menüpunkte `Login`, `Abmelden`, `Adminin` und `Personen` erreichbar.
+Herr Feldherr kann alle Kunden anschauen, PIN für die Person neu generieren, einzelne Personen löschen,
+das gesamte Datenbestand löschen und die Datenbank mit Kunden aus einer Datei neu befüllen.
 
 # Getting Startet mit Projekt `karte`
 
