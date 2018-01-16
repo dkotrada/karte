@@ -6,8 +6,14 @@ WS 17/18
 Kundenkartenverwaltungssystem
 
 ### Motivation
-Ein Unternehmer möchte die Kundenbindung an sein Unternehmen erweitern und braucht dazu ein Kundenkartenverwaltungssystem.
-Das System soll als eine Webseite erstellt werden. Es soll eine Möglich
+Ein Unternehmer z.B. Herr Feldherr möchte die Kundenbindung an sein Unternehmen erweitern und braucht dazu ein Kundenkartenverwaltungssystem.
+Das System soll als eine Webseite erstellt werden. Ein Kunde z.B Herr Kunz, soll eine Möglichkeiten haben 
+eine Kundenkarte zu beantragen, die Kartenpin zu ändern und die gespeicherten Kundendaten anzusehen. 
+Herr Feldherr möchte die vorhandenen Kundendaten in das System übernehmen können. 
+Herr Feldherr benötig für die Verwaltung der Karten einen geschützten Bereich.
+
+### Realisierung
+Das Projekt 
 
 # Getting Startet mit Projekt `karte`
 
@@ -27,7 +33,7 @@ Das System soll als eine Webseite erstellt werden. Es soll eine Möglich
 1. in der konsole: `yarn` (Initialisieren)
 2. in einer anderen Konsole: `mongod --dbpath mongodb` (Datenbankspeicherort angeben)
 3. in der konsole: `yarn start` (Applikation starten)
-4. Browser öffnen: `http://localhost:3131`
+4. Browser öffnen: `http://localhost:3131` alternativ `127.0.0.1:3113`
 
 
 # Allgemeine Informationen zu benutzten Technologien
