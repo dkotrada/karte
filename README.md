@@ -1,3 +1,14 @@
+# Grundlagen der Webtechnologie
+
+WS 17/18
+
+## Projekt Karte
+Kundenkartenverwaltungssystem
+
+### Motivation
+Ein Unternehmer möchte die Kundenbindung an sein Unternehmen erweitern und braucht dazu ein Kundenkartenverwaltungssystem.
+Das System soll als eine Webseite erstellt werden. Es soll eine Möglich
+
 # Getting Startet mit Projekt `karte`
 
 ## Benötigte Software (Windows und Ubuntu)
