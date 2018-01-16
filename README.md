@@ -103,8 +103,51 @@ Bootstrap ist ein Open-Source-Toolkit zur Entwicklung responsiver Designs mit HT
 
 http://getbootstrap.com/
 
+## Babeljs Kompiler
+Ermöglicht das Benutzen von Ecma Script 2015 im Projekt.
+
 
 # Dokumentation Quellcode des Projekts
 
 Die Dokumentation ist in den Kommentaren im Quellcode nachzulesen.
 
+## Datenbank Eintrag Beispiel
+
+
+```json
+  {
+    "title": "Dr.",
+    "name": "Jung",
+    "vorname": "Julia",
+    "strasse": "Verwalter",
+    "hausnummer": "33",
+    "stadt": "Superstadt",
+    "postleitzahl": "37877",
+    "telefon": "5572136578",
+    "email": "julia@karte.de",
+    "card": {
+      "pin": 0,
+      "uuid": 123456
+    }
+  }
+```
+
+## Projektstruktur nach der Installation
+
+- **mongodb** (Ordner für die Dokumentendatenbank)
+- **node_modules** (NodeJS notwendige Module "Bibliotheken")
+- **server** (Applikationsquellcode, Logik, Design)
+    - **controller** (MVC Applikationslogik)
+    - **model** (MVC Datenbank)
+    - **public** (Statische Dateien)
+    - **views** (MVC Darstellung)
+        - **pages** (Templates für die einzelne Seiten)
+        - **partials** (Template Blöcke für Wiederverwendung)
+    - **config.js** ( Port und Host Einstellungen )
+    - **index.js** ( Applikationseinstiegspunkt )
+- **.babelrc** (Konfiguration für den Babeljs Kompiler "es2015")
+- **.gitignore** (Versionsverwaltungsdatei für das GIT Repositorium)
+- **DATABASE_SEED.json** (Beispieldaten für den Datenbank)
+- **package.json** (Projektkonfigurationsdatei)
+- **README.md** (Information zum Projekt)
+- **yarn.lock** (Persistieren der Modulabhängigkeiten für das Projekt "karte")
