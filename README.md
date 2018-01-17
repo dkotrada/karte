@@ -51,6 +51,11 @@ Node.js ist ein in C++ geschriebene Laufzeitumgebung für Chrome V8 JavaScript M
 
 https://nodejs.org/de/
 
+# Node.js Module
+Die Projekte auf der Basis des Node.js sind modular aufgebaut. So übernimmt jedes Modul eine Bestimmte aufgabe.
+Zum Beispiel Rendern der Templates oder verwalten von Cookies. Im weiteren werden die im Projekt eingesetzten Module
+kurz beschreiben.
+
 ## Express.js
 Express ist ein schnelles, offenes, unkompliziertes Web-Framework für Node.js.
 http://expressjs.com/de/
@@ -86,30 +91,60 @@ Um MongoDB zu installieren einfach den Anleitungen auf den folgenden Webseiten f
 ### MongoDB befüllen des Datenbanks mit Beispieldaten
 - Dokument: `karte_db`
 - Kollektion: `people`
-- https://docs.mongodb.com/getting-started/shell/import-data/
 - `mongoimport --db karte_db --collection people --drop --file DATABASE_SEED.json --jsonArray`
+- https://docs.mongodb.com/getting-started/shell/import-data/
 
 ### Verzeichnis für MongoDB angeben
-- Neues kommando vor dem Start `mongod --dbpath mongodb/` im extra terminal
+- Ein extra Terminalfenster öffnen und folgendes Kommando ausführen: `mongod --dbpath mongodb/`
 
 
 ## Mongoose
-Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js
+Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js. Erlaubt uns das Arbeiten mit der MongoDB.
 
 http://mongoosejs.com/
+
+## Hilfsmodule
+
+- body-parser.js (Anfragebody verarbeiten)
+- cookie-parser.js  (Cookies verarbeiten)
+- cookie-session.js (Sessionen verarbeiten)
+- path.js   (Pfade im Projekt setzen)
+- shelljs.js    (Ausführen der Schellbefehle)
 
 ## Design mit Bootstrap Framework
 Bootstrap ist ein Open-Source-Toolkit zur Entwicklung responsiver Designs mit HTML, CSS und JS.
 
 http://getbootstrap.com/
 
+
+# Projekterstelung und Entwicklung
+
+Um das Projekt zu Kompilieren und den Entwickler zu unterstützen werden zusätzliche
+Module eingesetzt. Diese sind in der Datei `packages.json` im Bereich `devDependencies`
+aufgeführt.
+
 ## Babeljs Kompiler
 Ermöglicht das Benutzen von Ecma Script 2015 im Projekt.
+
+## Yarn
+Manager der Node.js Module, initialisieren des Projekts und starten des Servers.
+
+## Nodemon
+Überwachung der Änderungen des Quellcodes und automatisches Recompilieren 
+der Quelldateien.
+
+
+# Eigen erstellte Module
+
+- dbcontroller.js
+- personcontroller.js
+- routescontroller.js
+- config.js
 
 
 # Dokumentation Quellcode des Projekts
 
-Die Dokumentation ist in den Kommentaren im Quellcode nachzulesen.
+Die Dokumentation zur Quellcode ist in den Kommentaren in den jeweiligen Dateien nachzulesen.
 
 ## Datenbank Eintrag Beispiel
 
