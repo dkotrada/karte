@@ -43,7 +43,6 @@ app.set('view engine', 'ejs');
 /** Die EJS Templates Verzeichnis setzen */
 app.set('views', path.resolve("./server/views"));
 
-
 /** Express Konfiguration Anweisungen
  *
  * Die statischen Dateien aus dem extra
@@ -68,24 +67,26 @@ app.use(checkAuth);
 app.get('/persons', personController.index);
 app.delete('/persons', personController.removeAll);
 app.get('/person/:id', personController.remove);
-
-// Übername der Parameter von HTML Form und anlegen des Models
+app.get('/login', routesController.loginget);
+app.get('/admin', routesController.admin);
+app.get('/logout', routesController.logout);
 app.post('/person', personController.create);
+app.post('/login', routesController.loginpost);
+
+/** Kunde verwaltet seine eigene Daten */
+app.get('/customer', routesController.customer);
 app.post('/person/info', personController.info);
 app.post('/person/neupin', personController.neupin);
 
+/** Generierung der PIN vom Administrator */
 app.get('/persons/:id/card/pin', personController.generatepin);
 app.post('/persons/:id/card/pin', personController.generatepin);
 
 // DB Befüllen
 app.get('/populatedb', dbcontroller.populate);
 
-app.post('/login', routesController.loginpost);
-app.get('/login', routesController.loginget);
-app.get('/customer', routesController.customer);
-app.get('/admin', routesController.admin);
-app.get('/logout', routesController.logout);
 app.get('/', routesController.getroot);
+/** Alle anderen Routen */
 app.get('*', routesController.catchAll);
 
 

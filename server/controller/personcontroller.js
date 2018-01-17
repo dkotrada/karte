@@ -1,111 +1,151 @@
+/** Initialisieren des Moduls */
 import PersonModel from '../model/person';
 
+/** Modul nach außen zugänglich machen mit "module.exports" */
 module.exports = {
-    create: (req, res) => {
+    /** Person anlegen */
+    create: (reqest, response) => {
+        /** Zufallszahl generieren */
         const kartennummer = Math.floor(Math.random() * 999999);
+
+        /** Struktur der Daten in der Datenbank */
         const person = new PersonModel({
-            title: req.body.title,
-            name: req.body.name,
-            vorname: req.body.vorname,
-            strasse: req.body.strasse,
-            hausnummer: req.body.hausnummer,
-            stadt: req.body.stadt,
-            postleitzahl: req.body.postleitzahl,
-            telefon: req.body.telefon,
-            email: req.body.email,
+            title: reqest.body.title,
+            name: reqest.body.name,
+            vorname: reqest.body.vorname,
+            strasse: reqest.body.strasse,
+            hausnummer: reqest.body.hausnummer,
+            stadt: reqest.body.stadt,
+            postleitzahl: reqest.body.postleitzahl,
+            telefon: reqest.body.telefon,
+            email: reqest.body.email,
             card: {
                 pin: 0,
                 uuid: kartennummer
             }
         });
-        person.save((err, person) => {
-            if (err) {
-                res.render('pages/abortion');
-                console.log(err);
+        // Abspeichern der Daten
+        person.save((error, person) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                // Rendern des `*.ejs` Templates
+                response.render('pages/abortion');
             } else {
-                res.render('pages/confirmation');
-                console.log(person);
+                // Rendern des `*.ejs` Templates
+                response.render('pages/confirmation');
             }
         });
     },
-    neupin: (req, res) => {
-        // z.B 59f74c24488a29eabb42414a
-        PersonModel.findOne({'email': req.body.email}, (err, person) => {
-            if (err) {
-                return res.send(err);
-            }
-            person.card.pin = req.body.pin;
-            console.log("Person: ", person);
 
-            person.save((err, person) => {
-                if (err) {
-                    res.render('pages/abortion');
-                    console.log(err);
+    /** Kunde verwaltet seine eigene PIN */
+    neupin: (reqest, response) => {
+        // Holen der Daten aus der Datenbank
+        PersonModel.findOne({'email': reqest.body.email}, (error, person) => {
+            if (error) {
+                return response.send(error);
+            }
+            person.card.pin = reqest.body.pin;
+
+            // Speichern der Daten
+            person.save((error, person) => {
+                // Antwort Fehler oder Ok
+                if (error) {
+                    // Rendern des `*.ejs` Templates
+                    response.render('pages/abortion');
                 } else {
-                    res.render('pages/confirmpin');
-                    console.log(person);
+                    // Rendern des `*.ejs` Templates
+                    response.render('pages/confirmpin');
                 }
             });
         });
 
     },
-    info: (req, res) => {
-        PersonModel.findOne({'email': req.body.email}, (err, person) => {
-            if (err) {
-                return res.send(err);
+
+    /** Details zu einer Person */
+    info: (reqest, response) => {
+        // Holen der Daten aus der Datenbank
+        PersonModel.findOne({'email': reqest.body.email}, (error, person) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                return response.send(error);
             } else {
-                if (req.body.pin == person.card.pin) {
-                    res.render('pages/personinfo', {
+                if (reqest.body.pin == person.card.pin) {
+                    // Rendern des `*.ejs` Templates
+                    response.render('pages/personinfo', {
                         person: person
                     });
                 } else {
-                    res.render('pages/abortion');
+                    // Rendern des `*.ejs` Templates
+                    response.render('pages/abortion');
                 }
             }
         });
     },
-    index: (req, res) => {
-        PersonModel.find({}, (err, peoples) => {
-            if (err) {
-                return res.send(err);
+
+    /** Auflisten aller Personen */
+    index: (_, response) => {
+        // Holen der Daten aus der Datenbank
+        PersonModel.find({}, (error, peoples) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                return response.send(error);
             } else {
-                res.render('pages/personen', {
+                // Rendern des `*.ejs` Templates
+                response.render('pages/personen', {
                     persons: peoples
                 });
             }
         });
     },
-    remove: (req, res) => {
-        const id = req.params.id;
-        PersonModel.remove({'_id': id}, (err) => {
-            if (err) {
-                return res.send(err);
+
+    /** Entfernen einer Person aus der Datenbank */
+    remove: (reqest, response) => {
+        // Holen der Daten aus der Anfrage
+        const id = reqest.params.id;
+        // Entfernen der Daten aus der Datenbank
+        PersonModel.remove({'_id': id}, (error) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                return response.send(error);
             } else {
-                res.render('pages/confirmdelete');
+                // Rendern des `*.ejs` Templates
+                response.render('pages/confirmdelete');
             }
         })
     },
-    removeAll: (req, res) => {
-        PersonModel.remove({}, (err) => {
-            if (err) {
-                return res.send(err);
+
+    /** Entfernen aller Personen aus der Datenbank */
+    removeAll: (_, response) => {
+        // Entfernen der Daten aus der Datenbank
+        PersonModel.remove({}, (error) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                return response.send(error);
             }
-            res.send('200');
+            response.send('200');
         })
     },
-    generatepin: (req, res) => {
-        const id = req.params.id;
-        // Zahlen von 0 - 9999
+
+    /** Generierung der PIN vom Administrator */
+    generatepin: (reqest, response) => {
+
+        // Holen der Daten aus der Anfrage
+        const id = reqest.params.id;
+
+        // Zahlen von 0 - 9999 generieren
         const zahl = Math.floor(Math.random() * 9999);
-        PersonModel.findOne({'_id': id}, (err, person) => {
-            if (err) {
-                console.log(err);
-                res.send({pin: 0}); // Fehler
+
+        // Holen der Daten aus der Datenbank
+        PersonModel.findOne({'_id': id}, (error, person) => {
+            // Antwort Fehler oder Ok
+            if (error) {
+                console.log(error);
+                response.send({pin: 0}); // Fehler
             } else {
-                // PIN in der Datenbank schreiben
+                // PIN in die Datenbank schreiben
                 person.update({card: {pin: zahl}}).exec();
-                //res.send({pin: zahl});
-                res.render('pages/confirmpin');
+                // Rendern des `*.ejs` Templates
+                response.render('pages/confirmpin');
             }
         });
     }

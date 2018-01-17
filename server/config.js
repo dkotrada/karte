@@ -1,8 +1,7 @@
-// Client Konfiguration Administrator Dashboard
+/** Konfigurationsdatei */
 const port = 3113;
 const host = 'localhost';
 const protocol = 'http';
-
 
 module.exports = {
     PORT: port,

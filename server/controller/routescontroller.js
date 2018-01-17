@@ -1,36 +1,53 @@
+
+/** Modul nach außen zugänglich machen mit "module.exports" */
 module.exports = {
-    loginget: (req, res) => {
-        res.render('pages/login');
+    // Anzeigen der Loginseite
+    loginget: (_, response) => {
+        // Rendern des `*.ejs` Templates
+        response.render('pages/login');
     },
 
-    loginpost: (req, res) => {
-        if (req.body.username && req.body.username === 'admin@karte.de' && req.body.password && req.body.password === 'pass') {
-            req.session.authenticated = true;
-            res.redirect('/admin');
+    // Verarbeiten des Versendeten Formulars
+    loginpost: (reqest, response) => {
+        if (reqest.body.username && reqest.body.username === 'admin@karte.de' && reqest.body.password && reqest.body.password === 'pass') {
+            reqest.session.authenticated = true;
+            // Weiterleiten des Benutzers zur Adminseite
+            response.redirect('/admin');
         }
         else {
-            res.render('pages/abortion');
+            // Rendern des `*.ejs` Templates
+            response.render('pages/abortion');
         }
     },
 
-    logout: (req, res) => {
-        delete req.session.authenticated;
-        res.redirect('/');
+    // Administrator abmelden
+    logout: (reqest, response) => {
+        delete reqest.session.authenticated;
+        // Weiterleiten des Benutzers zur Hauptseite
+        response.redirect('/');
     },
 
-    getroot: (req, res) => {
-        res.render('pages/index');
+    // Startseite anzeigen
+    getroot: (_, response) => {
+        // Rendern des `*.ejs` Templates
+        response.render('pages/index');
     },
 
-    catchAll: (req, res) => {
-        res.render('pages/errorpage');
+    // Anfragen auf nicht existierende Routen behandeln
+    catchAll: (_, response) => {
+        // Rendern des `*.ejs` Templates
+        response.render('pages/errorpage');
     },
 
-    admin: (req, res) => {
-        res.render('pages/admin');
+    // Administrator Bereich anzeigen
+    admin: (_, response) => {
+        // Rendern des `*.ejs` Templates
+        response.render('pages/admin');
     },
 
-    customer: (req, res) => {
-        res.render('pages/customer');
+    // Kunden Bereich anzeigen
+    customer: (_, response) => {
+        // Rendern des `*.ejs` Templates
+        response.render('pages/customer');
     }
 };

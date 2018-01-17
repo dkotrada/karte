@@ -1,8 +1,9 @@
+/** Initialisieren des Moduls */
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-// Schema Definition http://mongoosejs.com/docs/validation.html
+// Schema Definition nach: http://mongoosejs.com/docs/validation.html
 const personSchema = new Schema({
     title: String,
     name: {type: String, required: true},
@@ -20,4 +21,5 @@ const personSchema = new Schema({
         }
 });
 
+/** Modul nach außen zugänglich machen */
 module.exports = mongoose.model('Person', personSchema);
