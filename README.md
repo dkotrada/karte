@@ -62,6 +62,7 @@ den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei 
 - **.babelrc** (Konfiguration für den Babeljs Kompiler "es2015")
 - **.gitignore** (Versionsverwaltungsdatei für das GIT Repositorium)
 - **DATABASE_SEED.json** (Beispieldaten für den Datenbank)
+- **LICENSE** (Eingesetzte Lizens)
 - **package.json** (Projektkonfigurationsdatei)
 - **README.md** (Information zum Projekt)
 - **yarn.lock** (Persistieren der Modulabhängigkeiten für das Projekt "karte")
@@ -197,6 +198,8 @@ Die Dokumentation zum Quellcode ist in den Kommentaren in den jeweiligen Dateien
 # Lizensen
 
 ## Quelltexte und Dateien des Projektes
+
+The MIT License (MIT) Source files only
 
 Copyright 2018 Dieter Konrad && Dieter Shuler
 
