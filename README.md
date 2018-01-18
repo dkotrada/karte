@@ -1,20 +1,24 @@
-# Grundlagen der Webtechnologie
+---
+title: "Projekt 'Kundenkartenverwaltungssystem' im Fach Grundlagen der Webtechnologie"
+author: [Dieter Konrad && Dieter Schuler]
+date: Wintersemester 2017/2018
+titlepage: true
+titlepage-color: 06386e
+titlepage-text-color: ffffff
+titlepage-rule-color: ffffff
+titlepage-rule-height: 1
+...
 
-WS 17/18
+\pagebreak
 
-Dieter Konrad && Dieter Schuler
-
-## Projekt Karte
-Kundenkartenverwaltungssystem
-
-### Motivation
+# Motivation
 Ein Unternehmer z.B. Herr Feldherr möchte die Kundenbindung an das eigene Unternehmen erzielen, indem er ein Kundenkartenverwaltungssystem einsetzt.
 Das System ist über ein Webportal aufrufbar. Ein Kunde z.B Herr Kunz, soll eine Möglichkeit haben 
 eine Kundenkarte zu beantragen, die Kartenpin zu ändern und die gespeicherten Kundendaten anzusehen. 
 Herr Feldherr möchte die vorhandenen oder vorgefertigte Kundendaten in das System übernehmen können. 
 Außerdem benötigt Herr Feldherr für die Verwaltung der Karten einen geschützten Bereich.
 
-### Implementierung
+## Implementierung
 Das System fungiert als Webseite mit einem Datenbanksystem. Die Weboberfläche ist responsive gestaltet worden. 
 Daher ist die Benutzerfreundlichkeit für mobile Geräte gegeben. Die Bedienung der Funktionen geschieht über das obere Menü.
 Die erste Seite ist ein Webformular. Es gibt eine Seite für den Kunden, erreichbar über den Menüpunkt `Kunde`. 
@@ -200,9 +204,11 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-**Bild von Ed Gregory**
+**Bildlizens**
 
-https://creativecommons.org/publicdomain/zero/1.0/
+Ed Gregory *[Creative Commons Zero Lizens](https://creativecommons.org/publicdomain/zero/1.0/)*
+
+\pagebreak
 
 # Screenshots der Anwendung
 
