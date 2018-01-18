@@ -5,6 +5,8 @@ date: Wintersemester 2017/2018
 titlepage: true
 ...
 
+[//]: # (Zum Kompilieren: $ pandoc ../README.md --toc -o Karte.pdf)
+
 \pagebreak
 
 # Motivation
@@ -43,7 +45,7 @@ den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei 
 4. Folgendes im Browser öffnen: `http://localhost:3131` alternativ `127.0.0.1:3113`
 
 
-# Allgemeine Informationen zu benutzten Technologien
+# Informationen zur benutzten Software
 
 NodeJS Application mit Express, Bootstrap, MongoDB und Mongoose
 
@@ -145,7 +147,7 @@ der Quelldateien.
 
 # Dokumentation Quellcode des Projekts
 
-Die Dokumentation zum Quellcode ist in den Kommentaren in den jeweiligen Dateien nachzulesen.
+Die Dokumentation zum Quellcode ist in den Kommentaren in den jeweiligen Dateien im Verzeichnis `server` ansehbar.
 
 ## Datenbank Eintrag Beispiel
 
@@ -191,7 +193,7 @@ Die Dokumentation zum Quellcode ist in den Kommentaren in den jeweiligen Dateien
 
 # Lizensen
 
-**Quelltexte und Dateien**
+## Quelltexte und Dateien des Projektes
 
 Copyright 2018 Dieter Konrad && Dieter Shuler
 
@@ -202,9 +204,12 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-**Bildlizens**
+## Bildlizens und Weitere
 
-Ed Gregory [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+Bild des Fotographen **Ed Gregory** `person-woman-small.jpg` [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Lizensen der in diesem Porjekt eingesetzten Software sind der jeweiligen Software zu entnehmen bzw auf den Seiten des Entwicklers ansehbar.
+
 
 \pagebreak
 
