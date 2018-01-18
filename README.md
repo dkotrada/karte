@@ -212,9 +212,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Bildlizens und Weitere
 
-Bild des Fotographen **Ed Gregory** `person-woman-small.jpg` [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+**CC0 für das Bild des Fotographen Ed Gregory `person-woman-small.jpg`**
 
-Lizensen der in diesem Porjekt eingesetzten Software sind der jeweiligen Software zu entnehmen bzw auf den Seiten des Entwicklers ansehbar.
+[https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+
+**Lizensen der in diesem Porjekt eingesetzten Software sind der jeweiligen Software zu entnehmen bzw auf den Seiten des Entwicklers ansehbar.**
 
 
 \pagebreak
