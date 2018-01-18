@@ -3,10 +3,6 @@ title: "Projekt 'Kundenkartenverwaltungssystem' im Fach Grundlagen der Webtechno
 author: [Dieter Konrad && Dieter Schuler]
 date: Wintersemester 2017/2018
 titlepage: true
-titlepage-color: 06386e
-titlepage-text-color: ffffff
-titlepage-rule-color: ffffff
-titlepage-rule-height: 1
 ...
 
 \pagebreak
@@ -30,13 +26,13 @@ den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei 
 
 ## Benötigte Software (Windows und Ubuntu)
 
-- YARN: https://yarnpkg.com/lang/en/
-- NodeJS: https://nodejs.org/en/
-- MongoDB: https://www.mongodb.com/download-center#community
+- YARN: [https://yarnpkg.com/lang/en/](https://yarnpkg.com/lang/en/)
+- NodeJS: [https://nodejs.org/en/](https://nodejs.org/en/)
+- MongoDB: [https://www.mongodb.com/download-center#community](https://www.mongodb.com/download-center#community)
 
 ## Projekt Quellcode herunterladen
 
-- https://github.com/dkotrada/karte/archive/master.zip
+- [https://github.com/dkotrada/karte/archive/master.zip](https://github.com/dkotrada/karte/archive/master.zip)
 - Nach dem entpacken zum ordner navigieren: `cd karte-master`
 
 ##  Projekt initialisieren und Starten
@@ -55,7 +51,7 @@ NodeJS Application mit Express, Bootstrap, MongoDB und Mongoose
 ## Node.js
 Node.js ist ein in C++ geschriebene Laufzeitumgebung für Chrome V8 JavaScript Maschine. Es erlaubt den JavaScript-Programmierern serverseitige Programme zu schreiben. Durch ereignisgesteuertes nicht blockierendes Eingabe/Ausgabe Model ist Node.js effizient und ressourcenschonend. Das npm Ökosystem von Node.js ist das größte Ökosystem von Open Source Bibliotheken in der Welt.
 
-https://nodejs.org/de/
+[https://nodejs.org/de/](https://nodejs.org/de/)
 
 # Node.js Module
 Die Projekte auf der Basis des Node.js sind modular aufgebaut. So übernimmt jedes Modul eine bestimmte Aufgabe.
@@ -65,7 +61,7 @@ kurz beschreiben.
 ## Express.js
 Express ist ein schnelles, offenes, unkompliziertes Web-Framework für Node.js.
 
-http://expressjs.com/de/
+[http://expressjs.com/de/](http://expressjs.com/de/)
 
 ## MongoDB
 Eine der Führenden NoSQL Datenbanken. Ist eine Allzweckdatenbank mit offenem Quellcode. Sie hat u.a. folgende Merkmale:
@@ -78,27 +74,29 @@ Eine der Führenden NoSQL Datenbanken. Ist eine Allzweckdatenbank mit offenem Qu
 - Erweiterte Sicherheit (z.B. Kerberos Unterstützung)
 - Speicherung großer Dateien mit GridFS
 
-https://www.mongodb.com/de
+[https://www.mongodb.com/de](https://www.mongodb.com/de)
 
 ### MongoDB Installation
-Um MongoDB installieren zu können genügt die Einsicht der Anleitungen auf den folgenden folgenden Webseiten:
-- https://docs.mongodb.com/manual/administration/install-community/
-- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+Um MongoDB installieren zu können genügt die Einsicht der Anleitungen auf den folgenden Webseiten:
+
+- [https://docs.mongodb.com/manual/administration/install-community/](https://docs.mongodb.com/manual/administration/install-community/)
+- [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 ### Mongo Consolen Bedienung
-- https://docs.mongodb.com/manual/reference/mongo-shell/
+- [https://docs.mongodb.com/manual/reference/mongo-shell/](https://docs.mongodb.com/manual/reference/mongo-shell/)
 - Shell starten: `mongo --shell`
 - Zeige Datenbanken: `show dbs`
 - Auswählen der Datenbank: `use databasename`
 - Kollektionen anzeigen: `show collections` oder `show tables`
 - Inhalt aller Daten in der Kollektion anzeigen: `db.collectioname.find()`
-- Gesamten Inhalt aus der Kollektion entfernen: `db.collectionname.remove({})` https://docs.mongodb.com/getting-started/shell/remove/
+- Gesamten Inhalt aus der Kollektion entfernen: `db.collectionname.remove({})` 
+- [https://docs.mongodb.com/getting-started/shell/remove/](https://docs.mongodb.com/getting-started/shell/remove/)
 
 ### MongoDB befüllen der Datenbank mit Beispieldaten
 - Dokument: `karte_db`
 - Kollektion: `people`
 - `mongoimport --db karte_db --collection people --drop --file DATABASE_SEED.json --jsonArray`
-- https://docs.mongodb.com/getting-started/shell/import-data/
+- [https://docs.mongodb.com/getting-started/shell/import-data/](https://docs.mongodb.com/getting-started/shell/import-data/)
 
 ### Verzeichnis für MongoDB angeben
 - Ein weiteres Terminalfenster öffnen und folgendes Kommando ausführen: `mongod --dbpath mongodb/`
@@ -106,7 +104,7 @@ Um MongoDB installieren zu können genügt die Einsicht der Anleitungen auf den 
 ## Mongoose
 Mongoose ist ein ODM Objekt-Datenbank-Management-System für Node.js. Erlaubt uns das Arbeiten mit der MongoDB.
 
-http://mongoosejs.com/
+[http://mongoosejs.com/](http://mongoosejs.com/)
 
 ## Hilfsmodule
 
@@ -119,7 +117,7 @@ http://mongoosejs.com/
 ## Design mit Bootstrap Framework
 Bootstrap ist ein Open-Source-Toolkit zur Entwicklung responsiver Designs mithilfe von HTML, CSS und JS.
 
-http://getbootstrap.com/
+[http://getbootstrap.com/](http://getbootstrap.com/)
 
 
 # Projekterstelung und Entwicklung
@@ -206,7 +204,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 **Bildlizens**
 
-Ed Gregory *[Creative Commons Zero Lizens](https://creativecommons.org/publicdomain/zero/1.0/)*
+Ed Gregory [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 
 \pagebreak
 
