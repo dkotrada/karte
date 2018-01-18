@@ -26,8 +26,9 @@ den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei 
 
 # Erste Schritte mit dem Projekt `karte`
 
-## Benötigte Software (Windows und Ubuntu)
+## Benötigte Software
 
+- Betriebsystem: Ubuntu oder Windows
 - YARN: [https://yarnpkg.com/lang/en/](https://yarnpkg.com/lang/en/)
 - NodeJS: [https://nodejs.org/en/](https://nodejs.org/en/)
 - MongoDB: [https://www.mongodb.com/download-center#community](https://www.mongodb.com/download-center#community)
