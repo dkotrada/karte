@@ -44,6 +44,27 @@ den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei 
 3. in der konsole: `yarn start` (Applikation starten)
 4. Folgendes im Browser öffnen: `http://localhost:3131` alternativ `127.0.0.1:3113`
 
+## Projektstruktur nach der Installation
+
+- **doku** (Dokumentation PDF und Bilder)
+- **mongodb** (Ordner für die Dokumentendatenbank)
+- **node_modules** (NodeJS notwendige Module "Bibliotheken")
+- **server** (Applikationsquellcode, Logik, Design)
+    - **controller** (MVC Applikationslogik)
+    - **model** (MVC Datenbank)
+    - **public** (Statische Dateien)
+    - **views** (MVC Darstellung)
+        - **pages** (Templates für die einzelne Seiten)
+        - **partials** (Template Blöcke für Wiederverwendung)
+    - **config.js** ( Port und Host Einstellungen )
+    - **index.js** ( Applikationseinstiegspunkt )
+- **.babelrc** (Konfiguration für den Babeljs Kompiler "es2015")
+- **.gitignore** (Versionsverwaltungsdatei für das GIT Repositorium)
+- **DATABASE_SEED.json** (Beispieldaten für den Datenbank)
+- **package.json** (Projektkonfigurationsdatei)
+- **README.md** (Information zum Projekt)
+- **yarn.lock** (Persistieren der Modulabhängigkeiten für das Projekt "karte")
+
 
 # Informationen zur benutzten Software
 
@@ -170,25 +191,6 @@ Die Dokumentation zum Quellcode ist in den Kommentaren in den jeweiligen Dateien
   }
 ```
 
-## Projektstruktur nach der Installation
-
-- **mongodb** (Ordner für die Dokumentendatenbank)
-- **node_modules** (NodeJS notwendige Module "Bibliotheken")
-- **server** (Applikationsquellcode, Logik, Design)
-    - **controller** (MVC Applikationslogik)
-    - **model** (MVC Datenbank)
-    - **public** (Statische Dateien)
-    - **views** (MVC Darstellung)
-        - **pages** (Templates für die einzelne Seiten)
-        - **partials** (Template Blöcke für Wiederverwendung)
-    - **config.js** ( Port und Host Einstellungen )
-    - **index.js** ( Applikationseinstiegspunkt )
-- **.babelrc** (Konfiguration für den Babeljs Kompiler "es2015")
-- **.gitignore** (Versionsverwaltungsdatei für das GIT Repositorium)
-- **DATABASE_SEED.json** (Beispieldaten für den Datenbank)
-- **package.json** (Projektkonfigurationsdatei)
-- **README.md** (Information zum Projekt)
-- **yarn.lock** (Persistieren der Modulabhängigkeiten für das Projekt "karte")
 
 
 # Lizensen
