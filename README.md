@@ -3,11 +3,7 @@ title: "Projekt 'Kundenkartenverwaltungssystem' im Fach Grundlagen der Webtechno
 author: [Dieter Konrad && Dieter Schuler]
 date: Wintersemester 2017/2018
 titlepage: true
-...
-
-[//]: # (Zum Kompilieren: $ pandoc ../README.md --toc -o Karte.pdf)
-
-\pagebreak
+---
 
 # Motivation
 Ein Unternehmer z.B. Herr Feldherr möchte die Kundenbindung an das eigene Unternehmen erzielen, indem er ein Kundenkartenverwaltungssystem einsetzt.
@@ -217,18 +213,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **Lizensen der in diesem Porjekt eingesetzten Software sind der jeweiligen Software zu entnehmen bzw auf den Seiten des Entwicklers ansehbar.**
-
-
-\pagebreak
-
-# Screenshots der Anwendung
-
-![Startseite](startseite.pdf)
-
-![Kundenbereich](kundenbereich.pdf)
-
-![Adminbereich](adminbereich.pdf)
-
-![Personenliste](personen.pdf)
-
-![Loginseite](loginseite.pdf)
