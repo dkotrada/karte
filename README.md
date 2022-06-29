@@ -1,7 +1,8 @@
-
-title: "Projekt 'Kundenkartenverwaltungssystem' im Fach Grundlagen der Webtechnologie"
-author: [Dieter Konrad && Dieter Schuler]
-date: Wintersemester 2017/2018
+```
+"Projekt 'Kundenkartenverwaltungssystem' im Fach Grundlagen der Webtechnologie"
+Dieter Konrad & Dieter Schuler
+Wintersemester 2017/2018
+```
 
 # Motivation
 Ein Unternehmer z.B. Herr Feldherr möchte die Kundenbindung an das eigene Unternehmen erzielen, indem er ein Kundenkartenverwaltungssystem einsetzt.
