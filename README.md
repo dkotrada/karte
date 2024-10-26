@@ -19,6 +19,12 @@ Verwaltungsseiten sind über die Menüpunkte `Login`, `Abmelden`, `Adminin` und 
 Herr Feldherr kann alle Kunden einsehen, PIN für die Person neu generieren, einzelne Personen löschen,
 den gesamten Datenbestand löschen und die Datenbank mit Kunden aus einer Datei neu befüllen.
 
+## Screenshots
+|   |   |
+|---|---|
+| <img src="https://github.com/dkotrada/karte/blob/master/doku/Kundenkarte-Beantragen.png">  | <img src="https://github.com/dkotrada/karte/blob/master/doku/Personen-Daten.png">  |
+| <img src="https://github.com/dkotrada/karte/blob/master/doku/Admin-Bereich.png"> | <img src="https://github.com/dkotrada/karte/blob/master/doku/Kunden-Bereich.png">  |
+
 # Erste Schritte mit dem Projekt `karte`
 
 ## Benötigte Software
